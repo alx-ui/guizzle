@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/alxUI/guizzle.com.br/compare/v1.0.0...v1.0.1) (2022-11-30)
+
+
+### Bug Fixes
+
+* tailwindcss plugin backdrop ([0718cd2](https://github.com/alxUI/guizzle.com.br/commit/0718cd28c44d8485391c5b4993c190408032396d))
+
 # 1.0.0 (2022-11-30)
 
 
