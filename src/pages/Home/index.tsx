@@ -17,7 +17,12 @@ export function Homepage() {
   const [showOneMSong, setShowOneMSong] = useState(false);
 
   return (
-    <div className="flex items-center justify-center w-full flex-col bg-black/80 min-h-screen">
+    <div
+      className="flex items-center justify-center w-full flex-col bg-black/80 min-h-screen"
+      style={{
+        backdropFilter: 'blur(64px) !important',
+      }}
+    >
       <img src={guizzleLogo} alt="Guizzle" className="w-[600px]" />
       <span className="font-semibold text-md text-center mt-[-3rem] text-white cursor-default">
         contato@guizzle.com.br
