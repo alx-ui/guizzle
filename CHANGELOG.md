@@ -1,3 +1,22 @@
+# 1.0.0 (2022-11-30)
+
+
+### Bug Fixes
+
+* app update imports ([7e5d74c](https://github.com/alxUI/guizzle.com.br/commit/7e5d74c0fb746db5506caacb782fedde94181286))
+* dependabot interval ([a3cb41b](https://github.com/alxUI/guizzle.com.br/commit/a3cb41b1392c2b8edcbbcf1e529ff10bdd286a16))
+* import global css ([1053d08](https://github.com/alxUI/guizzle.com.br/commit/1053d08c77653843e71bd5c42c34a258e4ce9677))
+* index meta tags ([afcd1c1](https://github.com/alxUI/guizzle.com.br/commit/afcd1c104e35c2cbeb55080c41aa29db9193e648))
+
+
+### Features
+
+* add config tailwindcss ([4bcfee9](https://github.com/alxUI/guizzle.com.br/commit/4bcfee9793ec44b4deae88d03a5bf057f4d2b7d3))
+* add new assets ([a60a3b5](https://github.com/alxUI/guizzle.com.br/commit/a60a3b55ff2183a29f5da014ae99862ecb701f97))
+* add new favicon ([eef5867](https://github.com/alxUI/guizzle.com.br/commit/eef58674df840b1fd72b5b047e32953222f1a353))
+* add page home link ([4c33684](https://github.com/alxUI/guizzle.com.br/commit/4c33684649711980ecdccefc18e44d67603d7042))
+* initial commit ([249359d](https://github.com/alxUI/guizzle.com.br/commit/249359da2d8060b502fc5f37c8f130fc2b4214ea))
+
 ## [1.0.6](https://github.com/alxUI/boilerplate-vite/compare/v1.0.5...v1.0.6) (2022-11-29)
 
 
