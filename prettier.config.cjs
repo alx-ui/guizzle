@@ -6,8 +6,6 @@ module.exports = {
   trailingComma: 'all',
   endOfLine: 'auto',
   parser: 'typescript',
-  plugins: [
-    'prettier-plugin-tailwindcss'
-  ],
-  pluginSearchDirs: false
-}
+  plugins: ['prettier-plugin-tailwindcss'],
+  pluginSearchDirs: false,
+};

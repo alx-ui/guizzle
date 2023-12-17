@@ -3,12 +3,17 @@
     "browser": true,
     "es6": true
   },
-  "extends": ["@ialexanderbrito/eslint-config/react"],
+  "extends": [
+    "@ialexanderbrito/eslint-config/react"
+  ],
   "rules": {
     // ADICIONE SUAS REGRAS AQUI
   },
   "settings": {
-    "import/extensions": [".ts", ".tsx"],
+    "import/extensions": [
+      ".ts",
+      ".tsx"
+    ],
     "react": {
       "createClass": "createReactClass",
       "pragma": "React",

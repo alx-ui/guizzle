@@ -5,6 +5,7 @@ import {
   SiDeezer,
   SiYoutube,
   SiX,
+  SiTiktok,
 } from 'react-icons/si';
 
 import { guizzleLogo, capa } from 'assets';
@@ -67,7 +68,7 @@ export function Homepage() {
           />
         </a>
         <a
-          href="https://www.youtube.com/channel/UCNpXeoUqcbuKpkdO7Z8DEUw"
+          href="https://youtu.be/pYsNzr_uwQ4?si=zJNUDsJ2-5YNcgEh"
           target="_blank"
           rel="noreferrer"
         >
@@ -92,6 +93,16 @@ export function Homepage() {
           rel="noreferrer"
         >
           <SiInstagram
+            size={26}
+            className="cursor-pointer text-white duration-300 hover:scale-110"
+          />
+        </a>
+        <a
+          href="https://www.tiktok.com/@guizzlemynizzle"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <SiTiktok
             size={26}
             className="cursor-pointer text-white duration-300 hover:scale-110"
           />

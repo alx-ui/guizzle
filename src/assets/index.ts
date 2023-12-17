@@ -1,4 +1,4 @@
-import capa from './capa.png';
-import guizzleLogo from './guizzle_logo.png';
+import capa from 'assets/capa.png';
+import guizzleLogo from 'assets/guizzle_logo.png';
 
 export { guizzleLogo, capa };
