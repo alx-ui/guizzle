@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/alxUI/guizzle.com.br/compare/v1.0.1...v1.1.0) (2023-12-18)
+
+
+### Features
+
+* add new page guizzle single QQMD ([96175a3](https://github.com/alxUI/guizzle.com.br/commit/96175a3a7243c641779987c9a56727289e03f41f))
+* add new social tiktok ([58251fd](https://github.com/alxUI/guizzle.com.br/commit/58251fd8e7126aec6197924e6b55f03afd720534))
+
 ## [1.0.1](https://github.com/alxUI/guizzle.com.br/compare/v1.0.0...v1.0.1) (2022-11-30)
 
 
