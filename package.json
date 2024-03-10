@@ -3,8 +3,8 @@
   "version": "1.1.0",
   "type": "module",
   "engines": {
-    "node": ">=18.18.2",
-    "npm": ">=8.1.0"
+    "node": ">=20.11.0",
+    "npm": ">=10.2.4"
   },
   "scripts": {
     "dev": "vite",
@@ -16,37 +16,37 @@
     "format:check": "prettier --check src/",
     "commit": "cz",
     "release": "semantic-release --no-ci",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
-    "react-icons": "^4.12.0",
-    "react-router-dom": "^6.20.1"
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.4.3",
-    "@commitlint/config-conventional": "^18.4.3",
-    "@ialexanderbrito/eslint-config": "^2.0.0",
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3",
+    "@ialexanderbrito/eslint-config": "^2.1.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@types/node": "^20.10.4",
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
+    "@types/node": "^20.11.25",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
     "@vitejs/plugin-react": "^4.2.1",
-    "autoprefixer": "^10.4.16",
+    "autoprefixer": "^10.4.18",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "^8.55.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.2.0",
-    "postcss": "^8.4.32",
-    "prettier-plugin-tailwindcss": "^0.5.9",
-    "semantic-release": "^22.0.10",
-    "tailwindcss": "^3.3.6",
-    "typescript": "^5.3.3",
-    "vite": "^5.0.7",
-    "vite-tsconfig-paths": "^4.2.2"
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "postcss": "^8.4.35",
+    "prettier-plugin-tailwindcss": "^0.5.12",
+    "semantic-release": "^23.0.2",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.5",
+    "vite-tsconfig-paths": "^4.3.1"
   },
   "config": {
     "commitizen": {
