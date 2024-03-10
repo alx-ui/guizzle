@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/alxUI/guizzle.com.br/compare/v1.1.0...v2.0.0) (2024-03-10)
+
+
+### Features
+
+* update dependencies and new node v20 ([2bfd887](https://github.com/alxUI/guizzle.com.br/commit/2bfd887492bcbb02ec9656bbfa3eb8b74ee821ce))
+
+
+### BREAKING CHANGES
+
+* required node v20 and update dependencies
+
 # [1.1.0](https://github.com/alxUI/guizzle.com.br/compare/v1.0.1...v1.1.0) (2023-12-18)
 
 
