@@ -1,3 +1,18 @@
+# [3.0.0](https://github.com/alx-ui/guizzle.com.br/compare/v2.0.0...v3.0.0) (2024-05-13)
+
+
+### Features
+
+* add home page info guizzle ([228f184](https://github.com/alx-ui/guizzle.com.br/commit/228f184743c4a7a8b42122ed919b2562b606d496))
+* add new assets ([f6e64d5](https://github.com/alx-ui/guizzle.com.br/commit/f6e64d56d5837b2123919551e530464eccac3ae4))
+* add new config project next ([0973f2d](https://github.com/alx-ui/guizzle.com.br/commit/0973f2ddd635806b055997acc43de9994bbe5262))
+* add new website with next ([cea764d](https://github.com/alx-ui/guizzle.com.br/commit/cea764d6dedde6fa250af4833430e3f96d7bdb16))
+
+
+### BREAKING CHANGES
+
+* add new website create with next 14
+
 # [2.0.0](https://github.com/alxUI/guizzle.com.br/compare/v1.1.0...v2.0.0) (2024-03-10)
 
 
