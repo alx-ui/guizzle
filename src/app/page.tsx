@@ -4,8 +4,8 @@ import { SiApplemusic, SiSpotify, SiYoutube, SiX, SiInstagram, SiTiktok } from '
 import Image from 'next/image';
 import Link from 'next/link';
 
-import capa from 'public/capa.png';
-import guizzleLogo from 'public/guizzle_logo.png';
+import capa from '@/assets/capa.png';
+import guizzleLogo from '@/assets/guizzle_logo.png';
 
 export default function Home() {
   return (
