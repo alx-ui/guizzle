@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/alx-ui/guizzle/compare/v3.0.0...v3.1.0) (2024-05-14)
+
+
+### Features
+
+* image optimization ([73cfbae](https://github.com/alx-ui/guizzle/commit/73cfbae00752e64e090418115bf7b18d56a3f1e6))
+
 # [3.0.0](https://github.com/alx-ui/guizzle.com.br/compare/v2.0.0...v3.0.0) (2024-05-13)
 
 
