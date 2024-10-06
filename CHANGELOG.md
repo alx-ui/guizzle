@@ -1,3 +1,16 @@
+# [3.2.0](https://github.com/alx-ui/guizzle/compare/v3.1.0...v3.2.0) (2024-10-06)
+
+
+### Bug Fixes
+
+* metadata import image og ([10b29b1](https://github.com/alx-ui/guizzle/commit/10b29b1087c4a74f528a2aa58fd3deaf22f2a999))
+
+
+### Features
+
+* add bluesky and update responsive ([6bfbe0d](https://github.com/alx-ui/guizzle/commit/6bfbe0dd20abf3b5d9dfe4406e191b9f18bfd29a))
+* update dependencies ([16e3436](https://github.com/alx-ui/guizzle/commit/16e343643c4b00ed838231a25f40f68463cb25c7))
+
 # [3.1.0](https://github.com/alx-ui/guizzle/compare/v3.0.0...v3.1.0) (2024-05-14)
 
 
