@@ -1,5 +1,5 @@
 import { FaDeezer } from 'react-icons/fa';
-import { SiApplemusic, SiSpotify, SiYoutube, SiX, SiInstagram, SiTiktok } from 'react-icons/si';
+import { SiApplemusic, SiSpotify, SiYoutube, SiX, SiInstagram, SiTiktok, SiBluesky } from 'react-icons/si';
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,7 +9,7 @@ import guizzleLogo from '@/assets/guizzle_logo.png';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-guizzle ">
+    <main className="flex flex-col items-center justify-center min-h-screen p-4 bg-guizzle ">
       <div className="flex flex-col items-center justify-center p-2">
         <Image src={guizzleLogo} width={200} height={200} alt="Guizzle" className="w-80" loading="lazy" />
         <Link
@@ -26,7 +26,7 @@ export default function Home() {
         <p className="mt-4 text-center text-lg font-bold text-white">OUÇA QQMD</p>
       </div>
 
-      <div className="flex flex-row items-center justify-center gap-4">
+      <div className="grid grid-cols-4 gap-4 mt-4 sm:grid-cols-8">
         <Link
           href="https://open.spotify.com/intl-pt/track/6FWJVk3lvdacKEY05LEX3w?si=b4e3c318d6774879"
           target="_blank"
@@ -48,6 +48,9 @@ export default function Home() {
         </Link>
         <Link href="https://www.instagram.com/guizzlemynizzle/" target="_blank" rel="noreferrer">
           <SiInstagram size={26} className="cursor-pointer text-white duration-300 hover:scale-110" />
+        </Link>
+        <Link href="https://bsky.app/profile/guizzlemynizzle.bsky.social" target="_blank" rel="noreferrer">
+          <SiBluesky size={26} className="cursor-pointer text-white duration-300 hover:scale-110" />
         </Link>
         <a href="https://www.tiktok.com/@guizzlemynizzle" target="_blank" rel="noreferrer">
           <SiTiktok size={26} className="cursor-pointer text-white duration-300 hover:scale-110" />
