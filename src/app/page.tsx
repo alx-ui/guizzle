@@ -4,14 +4,14 @@ import { SiApplemusic, SiSpotify, SiYoutube, SiX, SiInstagram, SiTiktok, SiBlues
 import Image from 'next/image';
 import Link from 'next/link';
 
-import capa from '@/assets/capa.png';
+import capa from '@/assets/capa.jpg';
 import guizzleLogo from '@/assets/guizzle_logo.png';
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-4 bg-guizzle ">
       <div className="flex flex-col items-center justify-center p-2">
-        <Image src={guizzleLogo} width={200} height={200} alt="Guizzle" className="w-80" loading="lazy" />
+        <Image src={guizzleLogo} width={200} height={200} alt="Guizzle" className="w-64" loading="lazy" />
         <Link
           href="mailto:contato@guizzle.com.br"
           className="mt-2 cursor-pointer text-center text-lg font-medium text-white"
@@ -23,7 +23,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center p-2">
         <Image src={capa} alt="Guizzle" className="w-80 rounded-lg" loading="lazy" />
 
-        <p className="mt-4 text-center text-lg font-bold text-white">OUÇA QQMD</p>
+        <p className="mt-4 text-center text-lg font-bold text-white">OUÇA MDX</p>
       </div>
 
       <div className="grid grid-cols-4 gap-4 mt-4 sm:grid-cols-8">
@@ -32,29 +32,29 @@ export default function Home() {
           target="_blank"
           rel="noreferrer"
         >
-          <SiSpotify size={26} className="cursor-pointer text-white duration-300 hover:scale-110" />
+          <SiSpotify size={26} className="cursor-pointer text-white duration-300 hover:scale-110 hover:opacity-80" />
         </Link>
         <Link href="https://music.apple.com/br/album/qqmd/1718745326?i=1718745327" target="_blank" rel="noreferrer">
-          <SiApplemusic size={26} className="cursor-pointer text-white duration-300 hover:scale-110" />
+          <SiApplemusic size={26} className="cursor-pointer text-white duration-300 hover:scale-110 hover:opacity-80" />
         </Link>
         <Link href="https://deezer.page.link/ZP7D37rM79T4y8GG7" target="_blank" rel="noreferrer">
-          <FaDeezer size={26} className="cursor-pointer text-white duration-300 hover:scale-110" />
+          <FaDeezer size={26} className="cursor-pointer text-white duration-300 hover:scale-110 hover:opacity-80" />
         </Link>
         <Link href="https://youtu.be/pYsNzr_uwQ4?si=zJNUDsJ2-5YNcgEh" target="_blank" rel="noreferrer">
-          <SiYoutube size={26} className="cursor-pointer text-white duration-300 hover:scale-110" />
+          <SiYoutube size={26} className="cursor-pointer text-white duration-300 hover:scale-110 hover:opacity-80" />
         </Link>
         <Link href="https://x.com/guizzlemynizzle" target="_blank" rel="noreferrer">
-          <SiX size={26} className="cursor-pointer text-white duration-300 hover:scale-110" />
+          <SiX size={26} className="cursor-pointer text-white duration-300 hover:scale-110 hover:opacity-80" />
         </Link>
         <Link href="https://www.instagram.com/guizzlemynizzle/" target="_blank" rel="noreferrer">
-          <SiInstagram size={26} className="cursor-pointer text-white duration-300 hover:scale-110" />
+          <SiInstagram size={26} className="cursor-pointer text-white duration-300 hover:scale-110 hover:opacity-80" />
         </Link>
         <Link href="https://bsky.app/profile/guizzlemynizzle.bsky.social" target="_blank" rel="noreferrer">
-          <SiBluesky size={26} className="cursor-pointer text-white duration-300 hover:scale-110" />
+          <SiBluesky size={26} className="cursor-pointer text-white duration-300 hover:scale-110 hover:opacity-80" />
         </Link>
-        <a href="https://www.tiktok.com/@guizzlemynizzle" target="_blank" rel="noreferrer">
-          <SiTiktok size={26} className="cursor-pointer text-white duration-300 hover:scale-110" />
-        </a>
+        <Link href="https://www.tiktok.com/@guizzlemynizzle" target="_blank" rel="noreferrer">
+          <SiTiktok size={26} className="cursor-pointer text-white duration-300 hover:scale-110 hover:opacity-80" />
+        </Link>
       </div>
     </main>
   );

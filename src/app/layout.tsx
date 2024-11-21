@@ -8,12 +8,12 @@ const thumbnail = {
   url: 'https://guizzle.com.br/og.png',
   width: 1200,
   height: 630,
-  alt: 'QQMD',
+  alt: 'MDX',
 };
 
 const defaultMetadata = {
-  title: 'GUIZZLE | QQMD',
-  description: 'Ouça QQMD nas plataformas digitais',
+  title: 'GUIZZLE | MDX',
+  description: 'Ouça MDX nas plataformas digitais',
   images: [thumbnail],
 };
 

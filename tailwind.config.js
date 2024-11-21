@@ -7,7 +7,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        guizzle: '#cc2229',
+        guizzle: '#0a32a4',
       },
     },
   },
