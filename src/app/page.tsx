@@ -28,19 +28,19 @@ export default function Home() {
 
       <div className="grid grid-cols-4 gap-4 mt-4 sm:grid-cols-8">
         <Link
-          href="https://open.spotify.com/intl-pt/track/6FWJVk3lvdacKEY05LEX3w?si=b4e3c318d6774879"
+          href="https://open.spotify.com/intl-pt/album/2UjqfBoIDUxCb0lboFmqqB?si=-J7KaD0mSzuPy14SegqdUA"
           target="_blank"
           rel="noreferrer"
         >
           <SiSpotify size={26} className="cursor-pointer text-white duration-300 hover:scale-110 hover:opacity-80" />
         </Link>
-        <Link href="https://music.apple.com/br/album/qqmd/1718745326?i=1718745327" target="_blank" rel="noreferrer">
+        <Link href="https://music.apple.com/br/album/mdx-single/1777151228" target="_blank" rel="noreferrer">
           <SiApplemusic size={26} className="cursor-pointer text-white duration-300 hover:scale-110 hover:opacity-80" />
         </Link>
-        <Link href="https://deezer.page.link/ZP7D37rM79T4y8GG7" target="_blank" rel="noreferrer">
+        <Link href="https://deezer.page.link/3iREpUUC8JpxpB3N6" target="_blank" rel="noreferrer">
           <FaDeezer size={26} className="cursor-pointer text-white duration-300 hover:scale-110 hover:opacity-80" />
         </Link>
-        <Link href="https://youtu.be/pYsNzr_uwQ4?si=zJNUDsJ2-5YNcgEh" target="_blank" rel="noreferrer">
+        <Link href="https://youtu.be/L2zbZj6PB5E?si=lhEcLObTv27BC1jR" target="_blank" rel="noreferrer">
           <SiYoutube size={26} className="cursor-pointer text-white duration-300 hover:scale-110 hover:opacity-80" />
         </Link>
         <Link href="https://x.com/guizzlemynizzle" target="_blank" rel="noreferrer">
