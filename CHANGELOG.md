@@ -1,3 +1,11 @@
+# [3.3.0](https://github.com/alx-ui/guizzle/compare/v3.2.0...v3.3.0) (2024-11-21)
+
+
+### Features
+
+* add new links ([e607bb0](https://github.com/alx-ui/guizzle/commit/e607bb0d4ae4e81bb15b203d00f3e3f5721dde95))
+* add new single mdx ([0b74b92](https://github.com/alx-ui/guizzle/commit/0b74b92ca33be07851fd0d06724ba1010c4b6314))
+
 # [3.2.0](https://github.com/alx-ui/guizzle/compare/v3.1.0...v3.2.0) (2024-10-06)
 
 
