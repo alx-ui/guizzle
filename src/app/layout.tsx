@@ -5,7 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 const thumbnail = {
-  url: 'https://guizzle.com.br/og.png',
+  url: 'https://guizzle.com.br/og.jpg',
   width: 1200,
   height: 630,
   alt: 'MDX',
