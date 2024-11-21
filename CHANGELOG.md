@@ -1,3 +1,10 @@
+## [3.3.1](https://github.com/alx-ui/guizzle/compare/v3.3.0...v3.3.1) (2024-11-21)
+
+
+### Bug Fixes
+
+* og extension image ([77b58bd](https://github.com/alx-ui/guizzle/commit/77b58bd92df568db42d6586326c2b79ed3515fa5))
+
 # [3.3.0](https://github.com/alx-ui/guizzle/compare/v3.2.0...v3.3.0) (2024-11-21)
 
 
