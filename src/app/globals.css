@@ -1,3 +1,223 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #6f8be1;
+    border-radius: 20px;
+  }
+
+  ::selection {
+    background-color: #6f8be1;
+    color: white;
+  }
+}
+
+@layer components {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .glass-effect {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .bento-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25rem;
+  }
+
+  .bento-grid-duo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25rem;
+  }
+
+  .bento-grid-single {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25rem;
+  }
+
+  @media (min-width: 640px) {
+    .bento-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .bento-grid-duo {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .bento-grid-single {
+      grid-template-columns: minmax(0, 2fr);
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .bento-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .bento-grid-duo {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bento-grid-single {
+      grid-template-columns: minmax(0, 2fr);
+    }
+  }
+
+  .bento-card {
+    border-radius: 1.5rem;
+    padding: 1.25rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .bento-card:hover {
+    transform: translateY(-0.25rem);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  @media (min-width: 640px) {
+    .bento-card {
+      padding: 1.5rem;
+    }
+  }
+
+  .bento-card-large {
+    grid-column: span 1;
+  }
+
+  @media (min-width: 640px) {
+    .bento-card-large {
+      grid-column: span 2;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .bento-card-large {
+      grid-column: span 2;
+    }
+  }
+
+  .platform-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+    width: 100%;
+  }
+
+  .platform-button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px);
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+    transform: scale(1);
+  }
+
+  .social-button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transform: scale(1.05);
+  }
+
+  .player-platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  @media (min-width: 640px) {
+    .player-platforms-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .player-platforms-grid {
+      gap: 1rem;
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-spin-slow {
+    animation: spin 1.5s linear infinite;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .loading-container {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+  }
+
+  .loading-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
