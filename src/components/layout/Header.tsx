@@ -16,7 +16,7 @@ export function Header() {
       </div>
       <div className="mt-6 sm:mt-8 flex flex-col items-center">
         <div className="glass-effect flex items-center gap-2 px-5 py-2 rounded-full mb-3 animate-pulse-slow">
-          <FaMusic className="text-[#6f8be1]" />
+          <FaMusic className="text-guizzle-light" />
           <span className="text-sm font-semibold text-[#101c3d]/80 dark:text-white/80">Novo Single • 2025</span>
         </div>
       </div>

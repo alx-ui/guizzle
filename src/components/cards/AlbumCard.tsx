@@ -15,7 +15,7 @@ export function AlbumCard({ spotifyUrl, albumTitle = 'VCNQ', albumType = 'Single
   return (
     <div className="bento-card bento-card-large glass-effect group">
       <div className="relative w-full h-80 sm:h-80 md:h-[480px] mb-4 overflow-hidden rounded-2xl shadow-lg">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-transparent to-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
         <div className="relative w-full h-full">
           <img
             src={capa.src}

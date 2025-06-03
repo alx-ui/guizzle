@@ -48,7 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
       </head>
       <body
-        className={`${inter.className} min-h-screen text-[#101c3d] dark:text-white overflow-x-hidden font-medium selection:bg-[#6f8be1] selection:text-white`}
+        className={`${inter.className} min-h-screen text-[#101c3d] dark:text-white overflow-x-hidden font-medium selection:bg-guizzle-light selection:text-white`}
       >
         <LoadingProvider>{children}</LoadingProvider>
       </body>
