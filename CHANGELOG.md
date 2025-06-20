@@ -1,3 +1,35 @@
+# [3.4.0](https://github.com/alx-ui/guizzle/compare/v3.3.1...v3.4.0) (2025-06-20)
+
+
+### Bug Fixes
+
+* disable Next.js no-img-element rule ([ca2bf6a](https://github.com/alx-ui/guizzle/commit/ca2bf6a8f8ec6d6e68673562f1be8e0f004b4c21))
+* remove swcMinify option from Next.js configuration ([215d6c0](https://github.com/alx-ui/guizzle/commit/215d6c0973c5ff84df135a29620875611616766b))
+
+
+### Features
+
+* add Background, Loading, PlatformLink, and SocialLink components ([67ee9dd](https://github.com/alx-ui/guizzle/commit/67ee9dd9e87ce0f4cd5806f64da919ffde6514e2))
+* add gradient and opacity to header background and improve music button style ([27c6aee](https://github.com/alx-ui/guizzle/commit/27c6aeeb5e69336832a17036fe221a0182f5ca02))
+* add layout components including ContentGrid, Footer, Header, LoadingProvider and etc ([4737d05](https://github.com/alx-ui/guizzle/commit/4737d05a6bd2705a0498bc5278e81b15391c1780))
+* add new card components for album, contact, social, streaming, and video ([dcd9f84](https://github.com/alx-ui/guizzle/commit/dcd9f8480e232fc415d275b980f3f19c6f959beb))
+* enhance footer style with glass effects and transitions for better aesthetics ([f4a5b83](https://github.com/alx-ui/guizzle/commit/f4a5b83748e2319cd9ee780d4a19354a54b508fc))
+* expand globals.css with new styles for layout, buttons, and animations ([87c816b](https://github.com/alx-ui/guizzle/commit/87c816bd6e898d27a009b199003138fee139dea1))
+* improved glass effects and transitions on components for better aesthetics ([65767c3](https://github.com/alx-ui/guizzle/commit/65767c39b22031b7addec4516b696762e42310f6))
+* refactor Home component to use layout components for improved structure ([238014a](https://github.com/alx-ui/guizzle/commit/238014ad3fa5e8971da560c71ff17e13fe620f8a))
+* refactor Tailwind CSS configuration and update global styles for improved theming ([86634e5](https://github.com/alx-ui/guizzle/commit/86634e5092654a778c186336e42af3b380de1c34))
+* update album and video details in ContentGrid component ([f495792](https://github.com/alx-ui/guizzle/commit/f49579245711b070f67333274a5db84cabad5f16))
+* update dependencies to lastest version ([136ebec](https://github.com/alx-ui/guizzle/commit/136ebec2a48f48cac0756e2d22eb446b8875c4e7))
+* update dependencies to latest versions for improved stability and performance ([afabdc1](https://github.com/alx-ui/guizzle/commit/afabdc110f987978e78ae19d7084deb65a0121b4))
+* update images capa.jpg and guizzle_logo.png for better visual representation ([c9388dc](https://github.com/alx-ui/guizzle/commit/c9388dc086de3708db8213797509a849af2e7ae4))
+* update layout and metadata for better website representation ([6c97ad3](https://github.com/alx-ui/guizzle/commit/6c97ad3d32ff30364d9a094ba8169faa33d5770a))
+* update Node.js version in .nvmrc to 22 ([faa2e3b](https://github.com/alx-ui/guizzle/commit/faa2e3b07beb334e56933ade253da5fb3bb936fa))
+* update og.jpg image for improved visual representation ([a13a9ac](https://github.com/alx-ui/guizzle/commit/a13a9ac85e7bb4906d82720f4b469e04297403c0))
+* update streaming platform links in the StreamingCard component ([ab51678](https://github.com/alx-ui/guizzle/commit/ab5167895e456b35f187914b56e0acbf45a32b3a))
+* update style classes to use Guizzle theme colors and gradients ([2db91b9](https://github.com/alx-ui/guizzle/commit/2db91b98ca5dd8faeba164b10f8b72ac187d7b01))
+* update Tailwind CSS configuration with additional theme colors, animations, keyframes ([b55fb4f](https://github.com/alx-ui/guizzle/commit/b55fb4f43dbea93dcb846076a838e60c39c86892))
+* upgrade tailwind v4 ([4c40489](https://github.com/alx-ui/guizzle/commit/4c4048921652dafed37f03fa3d87bfafb674373a))
+
 ## [3.3.1](https://github.com/alx-ui/guizzle/compare/v3.3.0...v3.3.1) (2024-11-21)
 
 
