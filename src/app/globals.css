@@ -1,3 +1,385 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --font-*: initial;
+  --font-sans: var(--font-inter), Noto Sans, sans-serif;
+
+  --color-guizzle: #0a32a4;
+  --color-guizzle-light: #6f8be1;
+  --color-sky-light: #eff6fb;
+  --color-blue-mid: #b6c8f0;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-spin-slow: spin 6s linear infinite;
+
+  --background-image-gradient-guizzle: radial-gradient(
+    circle at bottom right,
+    #6f8be1,
+    #071f65
+  );
+
+  --backdrop-blur-xs: 2px;
+
+  --shadow-bento: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@utility glass-effect {
+  background-color: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 10px 30px -5px rgba(0, 0, 0, 0.2),
+    0 4px 10px -3px rgba(0, 0, 0, 0.05),
+    inset 0 0 8px rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      130deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.05) 40%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at 50% -20%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    opacity: 0.3;
+    z-index: -1;
+  }
+}
+
+@utility bento-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.25rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@utility bento-grid-duo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.25rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@utility bento-grid-single {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.25rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: minmax(0, 2fr);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: minmax(0, 2fr);
+  }
+}
+
+@utility bento-card {
+  border-radius: 1.5rem;
+  padding: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 15px 35px -10px rgba(0, 0, 0, 0.15),
+    0 5px 15px -5px rgba(0, 0, 0, 0.1),
+    inset 0 0 15px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      130deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.05) 40%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0.6;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at 80% 10%,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 60%
+    );
+    opacity: 0.2;
+    z-index: -1;
+  }
+
+  &:hover {
+    transform: translateY(-0.25rem);
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow:
+      0 20px 40px -10px rgba(0, 0, 0, 0.2),
+      0 10px 20px -5px rgba(0, 0, 0, 0.1),
+      inset 0 0 20px rgba(255, 255, 255, 0.15);
+  }
+
+  @media (min-width: 640px) {
+    padding: 1.5rem;
+  }
+}
+
+@utility bento-card-large {
+  grid-column: span 1;
+
+  @media (min-width: 640px) {
+    grid-column: span 2;
+  }
+
+  @media (min-width: 1024px) {
+    grid-column: span 2;
+  }
+}
+
+@utility platform-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0 8px 20px -4px rgba(0, 0, 0, 0.1),
+    inset 0 0 10px rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      130deg,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0.05) 40%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0.6;
+    z-index: -1;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow:
+      0 12px 24px -6px rgba(0, 0, 0, 0.15),
+      0 4px 10px -3px rgba(0, 0, 0, 0.1),
+      inset 0 0 15px rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }
+}
+
+@utility social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(10px);
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 4px 10px -2px rgba(0, 0, 0, 0.1),
+    inset 0 0 8px rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      130deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.05) 40%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow:
+      0 8px 15px -3px rgba(0, 0, 0, 0.15),
+      0 3px 6px -2px rgba(0, 0, 0, 0.1),
+      inset 0 0 12px rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+}
+
+@utility player-platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: 768px) {
+    gap: 1rem;
+  }
+}
+
+@utility fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@utility animate-spin-slow {
+  animation: spin 1.5s linear infinite;
+}
+
+@utility loading-container {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@utility hidden {
+  &.loading-container {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@layer base {
+  html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #6f8be1;
+    border-radius: 20px;
+  }
+
+  ::selection {
+    background-color: #6f8be1;
+    color: white;
+  }
+}
+
+@layer components {
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+}
