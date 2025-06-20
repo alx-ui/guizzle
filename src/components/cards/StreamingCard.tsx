@@ -16,7 +16,7 @@ export function StreamingCard() {
       </div>
       <div className="player-platforms-grid">
         <PlatformLink
-          href="https://open.spotify.com/intl-pt/album/2UjqfBoIDUxCb0lboFmqqB?si=-J7KaD0mSzuPy14SegqdUA"
+          href="https://open.spotify.com/intl-pt/track/2G8ILVSLgOj0f8H2E0ZIb6?si=2520e30508c64124"
           icon={
             <SiSpotify size={32} className="text-white group-hover:text-green-400 transition-colors duration-300" />
           }
@@ -25,7 +25,7 @@ export function StreamingCard() {
           hoverClass="hover:bg-green-900/20 hover:border-green-300/20"
         />
         <PlatformLink
-          href="https://music.apple.com/br/album/mdx-single/1777151228"
+          href="https://music.apple.com/br/artist/guizzle/1597203795"
           icon={
             <SiApplemusic size={32} className="text-white group-hover:text-pink-400 transition-colors duration-300" />
           }
@@ -34,14 +34,14 @@ export function StreamingCard() {
           hoverClass="hover:bg-pink-900/20 hover:border-pink-300/20"
         />
         <PlatformLink
-          href="https://deezer.page.link/3iREpUUC8JpxpB3N6"
+          href="https://dzr.page.link/uKkRzxeNB8QSrWLQ8"
           icon={<FaDeezer size={32} className="text-white group-hover:text-blue-400 transition-colors duration-300" />}
           label="Deezer"
           ariaLabel="Ouvir no Deezer"
           hoverClass="hover:bg-blue-900/20 hover:border-blue-300/20"
         />
         <PlatformLink
-          href="https://youtu.be/L2zbZj6PB5E?si=lhEcLObTv27BC1jR"
+          href="https://youtu.be/axP3KdyfEQw"
           icon={<SiYoutube size={32} className="text-white group-hover:text-red-400 transition-colors duration-300" />}
           label="YouTube"
           ariaLabel="Assistir no YouTube"
