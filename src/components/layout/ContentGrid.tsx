@@ -33,7 +33,7 @@ export function ContentGrid() {
         </div>
 
         <div className="col-span-1 md:col-span-2 lg:col-span-6">
-          <VideoCard videoId="axP3KdyfEQw" title="VCNQ - Videoclipe Oficial" />
+          <VideoCard videoId="Ckes28A8_gQ" title="VCNQ - Videoclipe Oficial" />
         </div>
       </div>
     </section>
