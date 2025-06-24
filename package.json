@@ -1,7 +1,7 @@
 {
   "name": "guizzle",
   "description": "Landing Page Guizzle Single MDX",
-  "version": "3.4.0",
+  "version": "3.4.1",
   "private": true,
   "keywords": [
     "nextjs",

@@ -1,3 +1,10 @@
+## [3.4.1](https://github.com/alx-ui/guizzle/compare/v3.4.0...v3.4.1) (2025-06-24)
+
+
+### Bug Fixes
+
+* update videoId for VCNQ - Videoclipe Oficial in ContentGrid component ([22f9c7b](https://github.com/alx-ui/guizzle/commit/22f9c7b597cca766dd7d94576ab9ef9f3ca4c8f1))
+
 # [3.4.0](https://github.com/alx-ui/guizzle/compare/v3.3.1...v3.4.0) (2025-06-20)
 
 
