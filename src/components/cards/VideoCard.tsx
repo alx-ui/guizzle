@@ -47,11 +47,11 @@ export function VideoCard({ videoId, title = 'VCNQ - Videoclipe Oficial' }: Vide
               </div>
             </div>
             <img
-              src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+              src={`https://img.youtube.com/vi/${videoId}/0.jpg`}
               alt={title}
               className="w-full h-full object-cover"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = `https://img.youtube.com/vi/${videoId}/0.jpg`;
+                (e.target as HTMLImageElement).src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
               }}
             />
           </div>
