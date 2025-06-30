@@ -1,3 +1,10 @@
+## [3.4.2](https://github.com/alx-ui/guizzle/compare/v3.4.1...v3.4.2) (2025-06-30)
+
+
+### Bug Fixes
+
+* update video thumbnail source in VideoCard component ([a11637e](https://github.com/alx-ui/guizzle/commit/a11637e0dc95283dc93872bb493b8a59d5ab0520))
+
 ## [3.4.1](https://github.com/alx-ui/guizzle/compare/v3.4.0...v3.4.1) (2025-06-24)
 
 
