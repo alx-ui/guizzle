@@ -20,7 +20,7 @@ export function PlatformLink({ href, icon, label, ariaLabel, hoverClass }: Platf
       <div className="absolute inset-0 bg-linear-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
       <div className="z-10 flex flex-col items-center justify-center h-full p-4">
         {icon}
-        <span className="text-xs text-white/70 font-medium group-hover:text-white/90 transition-colors duration-300 mt-2">
+        <span className="text-xs text-[#074b6d]/70 font-medium group-hover:text-[#074b6d]/90 transition-colors duration-300 mt-2">
           {label}
         </span>
       </div>
