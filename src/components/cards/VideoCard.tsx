@@ -10,7 +10,7 @@ interface VideoCardProps {
   title: string;
 }
 
-export function VideoCard({ videoId, title = 'VCNQ - Videoclipe Oficial' }: VideoCardProps) {
+export function VideoCard({ videoId, title = 'PAZ - Videoclipe Oficial' }: VideoCardProps) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -22,9 +22,9 @@ export function VideoCard({ videoId, title = 'VCNQ - Videoclipe Oficial' }: Vide
     <div className="bento-card glass-effect">
       <div className="flex items-center justify-center gap-2 mb-4 w-full">
         <div className="w-8 h-8 rounded-full glass-effect flex items-center justify-center animate-pulse-slow">
-          <FaPlay className="text-white/80 ml-0.5" size={14} />
+          <FaPlay className="text-[#074b6d]/80 ml-0.5" size={14} />
         </div>
-        <h3 className="text-lg font-bold text-white/90">VIDEOCLIPE</h3>
+        <h3 className="text-lg font-bold text-[#074b6d]">VIDEOCLIPE</h3>
       </div>
       <div className="relative w-full aspect-video rounded-2xl overflow-hidden group shadow-lg">
         {!isPlaying ? (
@@ -42,8 +42,8 @@ export function VideoCard({ videoId, title = 'VCNQ - Videoclipe Oficial' }: Vide
             }}
           >
             <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/30 transition-all duration-300">
-              <div className="w-16 h-16 rounded-full glass-effect flex items-center justify-center border border-white/40 group-hover:scale-110 group-hover:bg-white/30 transition-all duration-500">
-                <FaPlay className="text-white ml-1" size={24} />
+              <div className="w-16 h-16 rounded-full glass-effect flex items-center justify-center border border-[#074b6d]/40 group-hover:scale-110 group-hover:bg-[#074b6d]/30 transition-all duration-500">
+                <FaPlay className="text-[#074b6d] ml-1" size={24} />
               </div>
             </div>
             <img
@@ -71,7 +71,7 @@ export function VideoCard({ videoId, title = 'VCNQ - Videoclipe Oficial' }: Vide
           </div>
         )}
       </div>
-      <p className="text-sm text-white/80 mt-4 text-center font-medium">{title}</p>
+      <p className="text-sm text-[#074b6d]/80 mt-4 text-center font-medium">{title}</p>
     </div>
   );
 }
