@@ -11,7 +11,7 @@ interface AlbumCardProps {
   year?: string;
 }
 
-export function AlbumCard({ spotifyUrl, albumTitle = 'VCNQ', albumType = 'Single', year = '2025' }: AlbumCardProps) {
+export function AlbumCard({ spotifyUrl, albumTitle = 'PAZ', albumType = 'Single', year = '2025' }: AlbumCardProps) {
   return (
     <div className="bento-card bento-card-large glass-effect group">
       <div className="relative w-full h-80 sm:h-80 md:h-[480px] mb-4 overflow-hidden rounded-2xl shadow-lg">
@@ -32,11 +32,11 @@ export function AlbumCard({ spotifyUrl, albumTitle = 'VCNQ', albumType = 'Single
               className="w-12 h-12 rounded-full bg-[#1DB954]/90 backdrop-blur-md flex items-center justify-center hover:scale-110 hover:bg-[#1DB954] transition-all duration-300"
               title="Ouvir no Spotify"
             >
-              <FaSpotify className="text-white text-xl" />
+              <FaSpotify className="text-[#074b6d] text-xl" />
             </Link>
           )}
           <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
-            <FaCompactDisc className="text-white text-xl animate-spin-slow" />
+            <FaCompactDisc className="text-[#074b6d] text-xl animate-spin-slow" />
           </div>
         </div>
       </div>
@@ -44,15 +44,15 @@ export function AlbumCard({ spotifyUrl, albumTitle = 'VCNQ', albumType = 'Single
         <div className="flex flex-col">
           {spotifyUrl ? (
             <Link href={spotifyUrl} target="_blank" rel="noopener noreferrer" className="group/title">
-              <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-wider text-shadow group-hover/title:text-[#1DB954] transition-colors duration-300">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#074b6d] tracking-wider text-shadow group-hover/title:text-[#1DB954] transition-colors duration-300">
                 {albumTitle}
               </h2>
             </Link>
           ) : (
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-wider text-shadow">{albumTitle}</h2>
           )}
-          <p className="text-sm text-white/80 mt-1 flex items-center">
-            <FaCompactDisc className="mr-2 text-white/70" /> {albumType} • {year}
+          <p className="text-sm text-[#074b6d] mt-1 flex items-center">
+            <FaCompactDisc className="mr-2 text-[#074b6d]/70" /> {albumType} • {year}
           </p>
         </div>
       </div>
