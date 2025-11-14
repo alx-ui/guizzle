@@ -14,12 +14,12 @@ const thumbnail = {
   url: 'https://guizzle.com.br/og.jpg',
   width: 1200,
   height: 630,
-  alt: 'VCNQ - Guizzle',
+  alt: 'PAZ - Guizzle',
 };
 
 const defaultMetadata = {
-  title: 'GUIZZLE | VCNQ',
-  description: 'Ouça VCNQ nas plataformas digitais',
+  title: 'GUIZZLE | PAZ',
+  description: 'Ouça PAZ nas plataformas digitais',
   images: [thumbnail],
 };
 
