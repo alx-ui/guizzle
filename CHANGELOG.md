@@ -1,3 +1,29 @@
+# [3.5.0](https://github.com/alx-ui/guizzle/compare/v3.4.2...v3.5.0) (2025-11-14)
+
+
+### Bug Fixes
+
+* adjust margin and text color in Footer component for improved layout ([4bb6932](https://github.com/alx-ui/guizzle/commit/4bb69327d428508dea07a08e9dc8bbcbc43de8d2))
+* adjust margin and text color in Header component for improved layout ([89e2946](https://github.com/alx-ui/guizzle/commit/89e2946050a4d4fb341e38667b67aa40197b6d45))
+* update AlbumCard details and remove VideoCard from ContentGrid component ([2132a14](https://github.com/alx-ui/guizzle/commit/2132a1410ebbde7bec4690f0df4e3e234d44b943))
+* update default album title and text colors in AlbumCard component for consistency ([1f1dacb](https://github.com/alx-ui/guizzle/commit/1f1dacb2de8910b2a57ce699c3f560fa91560333))
+* update default title and description in layout for consistency with PAZ ([cc71cda](https://github.com/alx-ui/guizzle/commit/cc71cda13fa342b6913f6e38cb9bc1fed99d24ec))
+* update default title and text colors in VideoCard component for consistency ([b22fce9](https://github.com/alx-ui/guizzle/commit/b22fce95985c63a696204b3952773332e7f1f8fd))
+* update dependencies to latest versions in package.json ([37b045a](https://github.com/alx-ui/guizzle/commit/37b045a24fd5d4f01b74ea62eb1bf1cedfc668d9))
+* update links and text colors in StreamingCard component for consistency ([3dc6b58](https://github.com/alx-ui/guizzle/commit/3dc6b58baa2ed95596445716d16509b881762980))
+* update scrollbar and selection colors for consistency ([ac70196](https://github.com/alx-ui/guizzle/commit/ac7019630d806cf1ee5e3b06b0c41a438050381e))
+* update text color in PlatformLink component for better visibility ([25cb9e2](https://github.com/alx-ui/guizzle/commit/25cb9e246da7d3e0b82ef85d97ab4f763aacb625))
+* update text colors in ContactCard component for consistency ([3725cd3](https://github.com/alx-ui/guizzle/commit/3725cd3340a8eb3095f0a820c43dfbb72bb4a29f))
+* update text colors in SocialCard component for consistency ([607cb12](https://github.com/alx-ui/guizzle/commit/607cb122fc77e74173a65aa993f17d3507090bee))
+* update TypeScript target to es2023 in tsconfig.json ([dea4602](https://github.com/alx-ui/guizzle/commit/dea46027602d6ace3a0dcdefab7257093bf596ae))
+
+
+### Features
+
+* add Background component to Loading screen and update loading text color ([3337008](https://github.com/alx-ui/guizzle/commit/3337008ee6dc1801561abc92abdb66f58986c380))
+* add background image and cover image assets ([7288549](https://github.com/alx-ui/guizzle/commit/72885492887c4f915be706d3b536361d94ba889e))
+* replace gradient background with image in Background component ([84eff7f](https://github.com/alx-ui/guizzle/commit/84eff7f57b583bec45e1f1491bd1487b1bfe000a))
+
 ## [3.4.2](https://github.com/alx-ui/guizzle/compare/v3.4.1...v3.4.2) (2025-06-30)
 
 
